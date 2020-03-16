@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quản lý sinh viên"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:background="#D8731B"
+        android:layout_margin="15dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Họ tên:"
+            android:layout_marginRight="5dp"
+            android:paddingLeft="10dp"
+            android:textSize="15sp"
+            android:textColor="#FFFF"
+            android:background="#568E26"/>
+
+        <EditText
+            android:id="@+id/etHoTen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="2"
+            android:background="#568E26"
+            android:paddingLeft="10dp"
+            android:text="Ngày tháng năm:"
+            android:textColor="#FFFF"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/etNTN"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Trường học:"
+            android:layout_marginRight="5dp"
+            android:paddingLeft="10dp"
+            android:textSize="15sp"
+            android:textColor="#FFFF"
+            android:background="#568E26"/>
+
+        <EditText
+            android:id="@+id/etTH"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Quên Quán :"
+            android:layout_marginRight="5dp"
+            android:paddingLeft="10dp"
+            android:textSize="15sp"
+            android:textColor="#FFFF"
+            android:background="#568E26"/>
+
+        <EditText
+            android:id="@+id/etQueQuan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="SĐT:"
+            android:layout_marginRight="5dp"
+            android:paddingLeft="10dp"
+            android:textSize="15sp"
+            android:textColor="#FFFF"
+            android:background="#568E26"/>
+
+        <EditText
+            android:id="@+id/etsdt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Mail:"
+            android:layout_marginRight="5dp"
+            android:paddingLeft="10dp"
+            android:textSize="15sp"
+            android:textColor="#FFFF"
+            android:background="#568E26"/>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_margin="10dp">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Giới tính"
+            android:layout_marginRight="5dp"
+            android:paddingLeft="10dp"
+            android:textSize="15sp"
+            android:textColor="#FFFF"
+            android:background="#568E26"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/rbNam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nam"
+                    android:checked="true"
+                    android:paddingLeft="5dp"
+                    android:textColor="#050505"
+                    android:paddingRight="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/rbNu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nữ"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="5dp"
+                    android:textColor="#050505"
+                    android:paddingRight="5dp"/>
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btxemDS"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:background="#D58585"
+            android:text="Xem DSSV"
+            android:textColor="#080908" />
+
+        <Button
+            android:id="@+id/btNhapLieu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Nhập Liệu"
+            android:textColor="#080908"
+            android:layout_margin="15dp"
+            android:background="#D58585"/>
+    </LinearLayout>
+</LinearLayout>
